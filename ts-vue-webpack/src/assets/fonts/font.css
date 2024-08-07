@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'SourceHanSansCN-Medium';
+  src: url('./medium/SourceHanSansCN-Medium.eot'),
+    url('./medium/SourceHanSansCN-Medium.ttf')
+      format('truetype'),
+    url('./medium/SourceHanSansCN-Medium.woff')
+      format('woff');
+}
+
