@@ -41,6 +41,9 @@ set encoding=utf-8
 " 共享系统剪贴板
 set clipboard=unnamedplus
 
+" 修改 Leader 键的映射
+let mapleader = ","
+
 " 设置 Coc.nvim 的 Node.js 路径
 let g:coc_node_path = trim(system('which node'))
 
@@ -177,6 +180,14 @@ nnoremap <leader>gr :ALEFindReferences<CR>
 " 自动修复代码
 nnoremap <leader>qf :ALEFix<CR>
 
+" 保存文件
+nnoremap <C-s>w :w<CR>
+inoremap <C-s> <Esc>:w<CR>a
+
+" 退出文件 - 保存并退出所有文件
+nnoremap <Leader>q :wq<CR>
+" 退出文件 - 强制退出所有文件
+nnoremap <Leader>qa! :qa!<CR> 
 " ======================
 " 主题与界面美化
 " ======================
